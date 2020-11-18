@@ -1,0 +1,343 @@
+{
+  "Uuid": "44234ef8-340f-4728-92ed-2bc11c0d191f",
+  "IsCustomNode": false,
+  "Description": null,
+  "Name": "Cria_Pontos_Familia",
+  "ElementResolver": {
+    "ResolutionMap": {}
+  },
+  "Inputs": [
+    {
+      "Id": "00e596c7a59c4be8a9c82c90955e6b2f",
+      "Name": "Start",
+      "Type": "number",
+      "Value": "71",
+      "MaximumValue": 100.0,
+      "MinimumValue": 0.0,
+      "StepValue": 1.0,
+      "NumberType": "Integer",
+      "Description": "A slider that produces integer values."
+    },
+    {
+      "Id": "84f590b006a342339d0c8f355bac0714",
+      "Name": "Stop",
+      "Type": "number",
+      "Value": "232",
+      "MaximumValue": 500.0,
+      "MinimumValue": 0.0,
+      "StepValue": 1.0,
+      "NumberType": "Integer",
+      "Description": "A slider that produces integer values."
+    },
+    {
+      "Id": "1c094d2c5f8842edb9acc4016318b6c7",
+      "Name": "Step",
+      "Type": "number",
+      "Value": "67",
+      "MaximumValue": 100.0,
+      "MinimumValue": 0.0,
+      "StepValue": 1.0,
+      "NumberType": "Integer",
+      "Description": "A slider that produces integer values."
+    }
+  ],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "PythonNodeModels.PythonNode, PythonNodeModels",
+      "NodeType": "PythonScriptNode",
+      "Code": "# Enable Python support and load DesignScript library\r\nimport clr\r\nclr.AddReference('ProtoGeometry')\r\nimport clr\r\nclr.AddReference('RevitNodes')\r\nimport Revit\r\nclr.ImportExtensions(Revit.Elements)\r\nfrom Autodesk.DesignScript.Geometry import *\r\n\r\n# The inputs to this node will be stored as a list in the IN variables.\r\nstart = IN[0]\r\nstep = IN[1]\r\nstop = IN[2]\r\nfamily = IN[3]\r\nlevel = IN[4]\r\n\r\nlist = []\r\n\r\n# Place your code below this line\r\n\r\nfor x in range(start, stop, step):\r\n\tfor y in range( start, stop, step):\r\n\t\tlist.append(Revit.Elements.FamilyInstance.ByPointAndLevel(family,Point.ByCoordinates(x,y),level))\r\n\t\t\r\n\r\n\r\n# Assign your output to the OUT variable.\r\nOUT = list",
+      "VariableInputPorts": true,
+      "Id": "21b9a13d57f748a083f99ab84c501a9d",
+      "Inputs": [
+        {
+          "Id": "081c40fa9d31489bb317d51a5c579d7e",
+          "Name": "IN[0]",
+          "Description": "Input #0",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "3153e15f54764c3684d473a0148352af",
+          "Name": "IN[1]",
+          "Description": "Input #1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "91a616fc4ca04d9298ad4b6b3efe165f",
+          "Name": "IN[2]",
+          "Description": "Input #2",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "289681daf35c41e4ae81a04710dfadd5",
+          "Name": "IN[3]",
+          "Description": "Input #3",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "8be30e770efa4221884301324b7ee7fe",
+          "Name": "IN[4]",
+          "Description": "Input #4",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "40892e5bd2a74320a4abeaddd7524699",
+          "Name": "OUT",
+          "Description": "Result of the python script",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Runs an embedded IronPython script."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.IntegerSlider, CoreNodeModels",
+      "NodeType": "NumberInputNode",
+      "NumberType": "Integer",
+      "InputValue": 71,
+      "MaximumValue": 100,
+      "MinimumValue": 0,
+      "StepValue": 1,
+      "Id": "00e596c7a59c4be8a9c82c90955e6b2f",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "152518a4f9cd491ca0020c888a08a6aa",
+          "Name": "",
+          "Description": "Int32",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "A slider that produces integer values."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.IntegerSlider, CoreNodeModels",
+      "NodeType": "NumberInputNode",
+      "NumberType": "Integer",
+      "InputValue": 232,
+      "MaximumValue": 500,
+      "MinimumValue": 0,
+      "StepValue": 1,
+      "Id": "84f590b006a342339d0c8f355bac0714",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "0c55481ef8b04cc0be34133af03e21bb",
+          "Name": "",
+          "Description": "Int32",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "A slider that produces integer values."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.IntegerSlider, CoreNodeModels",
+      "NodeType": "NumberInputNode",
+      "NumberType": "Integer",
+      "InputValue": 67,
+      "MaximumValue": 100,
+      "MinimumValue": 0,
+      "StepValue": 1,
+      "Id": "1c094d2c5f8842edb9acc4016318b6c7",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "f2754e29eb854f3193aa003d671c92a9",
+          "Name": "",
+          "Description": "Int32",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "A slider that produces integer values."
+    },
+    {
+      "ConcreteType": "DSRevitNodesUI.FamilyTypes, DSRevitNodesUI",
+      "SelectedIndex": 90,
+      "NodeType": "ExtensionNode",
+      "Id": "cd8809d8d44d43f39c8cec36c25af2bb",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "1238a693b3f549f7a1a8236d58ca9a88",
+          "Name": "Family Type",
+          "Description": "The selected Family Type",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "All family types available in the document."
+    },
+    {
+      "ConcreteType": "DSRevitNodesUI.Levels, DSRevitNodesUI",
+      "SelectedIndex": 4,
+      "NodeType": "ExtensionNode",
+      "Id": "6e5c2de7d6624e618ec68eacfdb8f0f3",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "b754b867c024461984cd721d1d8f6eef",
+          "Name": "Levels",
+          "Description": "The selected Levels",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Select a level in the active document"
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "152518a4f9cd491ca0020c888a08a6aa",
+      "End": "081c40fa9d31489bb317d51a5c579d7e",
+      "Id": "594c9f2582f64aa4afb9444f1c693111"
+    },
+    {
+      "Start": "0c55481ef8b04cc0be34133af03e21bb",
+      "End": "91a616fc4ca04d9298ad4b6b3efe165f",
+      "Id": "d52b12dce37c44f09d17b669d4d62777"
+    },
+    {
+      "Start": "f2754e29eb854f3193aa003d671c92a9",
+      "End": "3153e15f54764c3684d473a0148352af",
+      "Id": "3b31c760b4b14c1e9380a41e041ed763"
+    },
+    {
+      "Start": "1238a693b3f549f7a1a8236d58ca9a88",
+      "End": "289681daf35c41e4ae81a04710dfadd5",
+      "Id": "08677dbf1f8f4497b45b878ddd28e6ba"
+    },
+    {
+      "Start": "b754b867c024461984cd721d1d8f6eef",
+      "End": "8be30e770efa4221884301324b7ee7fe",
+      "Id": "774c911d53124091bbc012b857818c12"
+    }
+  ],
+  "Dependencies": [],
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.0.4.12684",
+      "RunType": "Manual",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "Background Preview",
+      "EyeX": 79.0524124570702,
+      "EyeY": 197.5399991537204,
+      "EyeZ": 203.41338198172519,
+      "LookX": -9.1781486039721756,
+      "LookY": -45.817288345498213,
+      "LookZ": -227.46345222775517,
+      "UpX": 0.00070363190351648073,
+      "UpY": 0.99984769515639116,
+      "UpZ": 0.017438216439661744
+    },
+    "NodeViews": [
+      {
+        "ShowGeometry": true,
+        "Name": "Python Script",
+        "Id": "21b9a13d57f748a083f99ab84c501a9d",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 324.66312352560232,
+        "Y": 37.563624657633511
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Start",
+        "Id": "00e596c7a59c4be8a9c82c90955e6b2f",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -172.28891204925469,
+        "Y": -76.579976944349085
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Stop",
+        "Id": "84f590b006a342339d0c8f355bac0714",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -173.88070188532174,
+        "Y": 61.840318662211814
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Step",
+        "Id": "1c094d2c5f8842edb9acc4016318b6c7",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -174.88070188532174,
+        "Y": -7.8698291410686352
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Tipo de Família",
+        "Id": "cd8809d8d44d43f39c8cec36c25af2bb",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -198.60039950149428,
+        "Y": 129.28575170955872
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Nível do Projeto",
+        "Id": "6e5c2de7d6624e618ec68eacfdb8f0f3",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -76.80154401234779,
+        "Y": 215.97332633229894
+      }
+    ],
+    "Annotations": [],
+    "X": 141.42924240214722,
+    "Y": 236.02046598106324,
+    "Zoom": 0.775230660981312
+  }
+}
