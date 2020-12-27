@@ -70,65 +70,43 @@ Agora abra o Revit, procure a extensão PyRevit e clique em Reload.
 
 **Painel Eletromecânico**
 
+![](https://github.com/ggiavoni/Python-Substation-/blob/main/Imagens/1.9.PNG)
+
+* Função: Retorna a quantidade de cabos aéreos. (Categoria FlexPipe)
+* Status: Finalizado
 
 
+![](https://github.com/ggiavoni/Python-Substation-/blob/main/Imagens/1.10.PNG)
+
+* Função: Retorna a quantidade de ferragem para cadeia de isoladores e seus isoladores. (Categoria DataDevices)
+* Status: Em progresso
+
+![](https://github.com/ggiavoni/Python-Substation-/blob/main/Imagens/1.11.PNG)
+
+* Função: Retorna a quantidade de conectores. (Categoria DataDevices)
+* Status: Em progresso
+
+![](https://github.com/ggiavoni/Python-Substation-/blob/main/Imagens/1.12.PNG)
+
+* Função: Retorna a quantidade de eletrodutos, em metros. (Categoria Counduit)
+* Status: Em progresso
+
+![](https://github.com/ggiavoni/Python-Substation-/blob/main/Imagens/1.13.PNG)
+
+* Função: Retorna a quantidade de equipamentos por tensão. (Categoria Electrical Equipment)
+* Status: Em progresso
+
+![](https://github.com/ggiavoni/Python-Substation-/blob/main/Imagens/1.14.PNG)
+
+* Função: Retorna a quantidade em metros dos elementos de malha de terra. (Categoria FlexPipe)
+* Status: Em progresso
+
+**Painel Parâmetros*
+
+![](https://github.com/ggiavoni/Python-Substation-/blob/main/Imagens/1.15.PNG)
+
+* Função: Retorna o nome de todas as famílias do projeto, conforme filtro pré-estabelecido. 
+* Status: Finalizado
 
 
-
-
-
-
-
-
-
-
-
-
-
-## Configuração para Desenvolvimento
-
-Descreva como instalar todas as dependências para desenvolvimento e como rodar um test-suite automatizado de algum tipo. Se necessário, faça isso para múltiplas plataformas.
-
-```sh
-make install
-npm test
-```
-
-## Histórico de lançamentos
-
-* 0.2.1
-    * MUDANÇA: Atualização de docs (código do módulo permanece inalterado)
-* 0.2.0
-    * MUDANÇA: Remove `setDefaultXYZ()`
-    * ADD: Adiciona `init()`
-* 0.1.1
-    * CONSERTADO: Crash quando chama `baz()` (Obrigado @NomeDoContribuidorGeneroso!)
-* 0.1.0
-    * O primeiro lançamento adequado
-    * MUDANÇA: Renomeia `foo()` para `bar()`
-* 0.0.1
-    * Trabalho em andamento
-
-## Meta
-
-Seu Nome – [@SeuNome](https://twitter.com/...) – SeuEmail@exemplo.com
-
-Distribuído sob a licença XYZ. Veja `LICENSE` para mais informações.
-
-[https://github.com/yourname/github-link](https://github.com/othonalberto/)
-
-## Contributing
-
-1. Faça o _fork_ do projeto (<https://github.com/yourname/yourproject/fork>)
-2. Crie uma _branch_ para sua modificação (`git checkout -b feature/fooBar`)
-3. Faça o _commit_ (`git commit -am 'Add some fooBar'`)
-4. _Push_ (`git push origin feature/fooBar`)
-5. Crie um novo _Pull Request_
-
-[npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/datadog-metrics
-[npm-downloads]: https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square
-[travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
-[travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
-[wiki]: https://github.com/seunome/seuprojeto/wiki
 
