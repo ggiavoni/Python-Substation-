@@ -16,6 +16,9 @@ Plataforma criada por Ehsan Iran-Nejad que serve como ponte entre C# e Python:
 
 [PyRevit - Página de Instalação](https://www.notion.so/Install-pyRevit-98ca4359920a42c3af5c12a7c99a196d)
 
+Ferramentas Extras 
+
+Após a instalação do PyRevit, copie e cole todas as pastas do projeto neste local em sua máquin
 
 ## Exemplo de uso
 
