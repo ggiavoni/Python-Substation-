@@ -5,7 +5,7 @@
 [![Build Status][travis-image]][travis-url]
 [![Downloads Stats][npm-downloads]][npm-url]
 
-No momento estou desenvolvendo quantitativos específicos para o Revit, onde o usuário irá apenas clicar em um botão e extrair o quantitativo de uma categoria específica. A ideia principal é reduzir o tempo de tal função para novos usuários, ou principalmente, aqueles que apenas desejam consultar informação. 
+Objetivo: Quantitativos específicos para o Revit, onde o usuário irá apenas clicar em um botão e extrair o quantitativo de uma categoria específica. A ideia principal é reduzir o tempo de tal função para novos usuários, ou principalmente, aqueles que apenas desejam consultar informação. 
 
 ![](../header.png)
 
@@ -22,10 +22,7 @@ Procure este caminho após a instalação:
 
 C:\Users\USER\AppData\Roaming\pyRevit-Master\extensions
 
-Para que uma nova aba, personalizada, apareça no Revit junto aos já existentes do PyRevit, você precisa que as pastas e subpastas estejam organizadas da seguinte forma: 
-                                                      
-* 1.0 C:\Users\USER\AppData\Roaming\pyRevit-Master\extensions
-    * Pasta que estará disponível após a instalação do PyRevit( Passo 01)
+Para que uma nova aba, personalizada, apareça no Revit junto aos já existentes do PyRevit, você precisa que as pastas e subpastas estejam organizadas da seguinte forma:                                             
 * 1.0.1
     * Baixe e cole dentro de extensions [pyRevitSubstation.extension](https://github.com/ggiavoni/PythonSubstation-/tree/main/pyRevitSubstation.extension/pyRevitSub.tab)
 * 1.0.2
