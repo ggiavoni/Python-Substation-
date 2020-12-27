@@ -33,7 +33,7 @@ Agora abra o Revit, procure a extensão PyRevit e clique em Reload.
 
 Arruamento : Em progresso
 
-![](https://github.com/ggiavoni/Python-Substation-/blob/main/pyRevitSubstation.extension/pyRevitSub.tab/Civil.panel/Arruamento.pushbutton/icon.png)
+![](https://github.com/ggiavoni/Python-Substation-/blob/main/Imagens/1.2.PNG)
 
 Retorna a quantidade em m² de alfalto. (Categoria Floor)
 
