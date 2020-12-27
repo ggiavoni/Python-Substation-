@@ -3,7 +3,41 @@
 
 Objetivo: Quantitativos específicos para o Revit, onde o usuário irá apenas clicar em um botão e extrair o quantitativo de uma categoria específica. A ideia principal é reduzir o tempo de tal função para novos usuários, ou principalmente, aqueles que apenas desejam consultar informação. 
 
+Muitas outras funcionalidades virão por ai, mas para comerçarmos, vamos extrair quantidades!! 
+
 ![](../header.png)
+
+## Exemplo de Funcionamento do Código Python com o Revit. 
+
+Instale o [PythonShell](https://github.com/architecture-building-systems/revitpythonshell). 
+
+Vamos criar um script que retorna o nome de todas as famílias do projeto. 
+
+```
+# Importa o namespace do Revit 
+from Autodesk.Revit import DB
+
+# Documento Ativo do Revit 
+doc = __revit__.ActiveUIDocument.Document
+
+# Todas as Famílias do Projeto
+all_fams = DB.FilteredElementCollector(doc).OfClass(DB.Family).WhereElementIsNotElementType().ToElements()
+
+family_name = []
+
+# Lógica principal
+for fam in all_fams:
+    fam_name = fam.FamilyCategory.Name  
+    ele_name = fam.Name
+    family_name.append(ele_name)
+	
+
+print("----------------------NOME DAS FAMILIAS-------------------------")
+for a in family_name:
+    print('\"{}\"'.format(a))
+    
+
+```
 
 ## Instalação das Ferramentas Python-Substation
 
