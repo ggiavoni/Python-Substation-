@@ -31,23 +31,44 @@ Agora abra o Revit, procure a extensão PyRevit e clique em Reload.
 
 **Painel Civil** 
 
-Arruamento 
-
 ![](https://github.com/ggiavoni/Python-Substation-/blob/main/Imagens/1.2.PNG)
 
 * Função: Retorna a quantidade em m² de alfalto. (Categoria Floor)
 * Status: Em progresso
 
-Brita : Em progresso
-
 ![](https://github.com/ggiavoni/Python-Substation-/blob/main/Imagens/1.3.PNG)
 
-Retorna a quantidade em m³ de brita. (Categoria Floor)
+* Função: Retorna a quantidade em m² de brita. (Categoria Floor)
+* Status: Em progresso
+
+![](https://github.com/ggiavoni/Python-Substation-/blob/main/Imagens/1.4.PNG)
+
+* Função: Retorna o metro linear de canaletas enterradas e suas tampas. (Categoria Wall e Structural Connection)
+* Status: Em progresso
+
+![](https://github.com/ggiavoni/Python-Substation-/blob/main/Imagens/1.5.PNG)
+
+* Função: Retorna a quantidade em m² de alfalto. (Categoria Floor)
+* Status: Em progresso
+
+![](https://github.com/ggiavoni/Python-Substation-/blob/main/Imagens/1.6.PNG)
+
+* Função: Retorna a quantidade em m de cerca de ferramento e o concreto para fixação. (Categoria Site e Floor)
+* Status: Em progresso
 
 
+![](https://github.com/ggiavoni/Python-Substation-/blob/main/Imagens/1.7.PNG)
+
+* Função: Retorna a quantidade em kg das estruturas metálicas. (Categoria Generic Model)
+* Status: Em progresso
 
 
+![](https://github.com/ggiavoni/Python-Substation-/blob/main/Imagens/1.8.PNG)
 
+* Função: Retorna a quantidade em Kg e Unidades de Pré-Moldado. (Categoria Generic Model)
+* Status: Em progresso
+
+**Painel Eletromecânico**
 
 
 
