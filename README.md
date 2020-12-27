@@ -151,3 +151,6 @@ Agora abra o Revit, procure a extensão PyRevit e clique em Reload.
 
 
 
+## Disclaimer
+
+Estas ferramentas foram criadas para uso específico em uma fluxo BIM na GE do Brasil, porém se você as funcionalidades podem ser expandidas de acordo com sua necessidade. 
