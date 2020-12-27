@@ -9,17 +9,28 @@ No momento estou desenvolvendo quantitativos específicos para o Revit, onde o u
 
 ![](../header.png)
 
-## Instalação
+## Instalação das Ferramentas Python-Substation
 
-PyRevit:
+## Passo 01: Instale o PyRevit
 Plataforma criada por Ehsan Iran-Nejad que serve como ponte entre C# e Python: 
 
 [PyRevit - Página de Instalação](https://www.notion.so/Install-pyRevit-98ca4359920a42c3af5c12a7c99a196d)
 
-Ferramentas Extras 
+## Passo 02 
 
-Após a instalação do PyRevit, copie e cole todas as pastas do projeto neste local em sua máquin
+Procure este caminho após a instalação: 
 
+C:\Users\USER\AppData\Roaming\pyRevit-Master\extensions
+
+Para que uma nova aba, personalizada, apareça no Revit junto aos já existentes do PyRevit, você precisa que as pastas e subpastas estejam organizadas da seguinte forma: 
+                                                      
+* 1.0 C:\Users\USER\AppData\Roaming\pyRevit-Master\extensions
+    * Pasta que estará disponível após a instalação do PyRevit( Passo 01)
+* 1.0.1
+    * Baixe e cole dentro de extensions [pyRevitSubstation.extension](https://github.com/ggiavoni/PythonSubstation-/tree/main/pyRevitSubstation.extension/pyRevitSub.tab)
+* 1.0.2
+    * Clique em PyRevit e aplique o Reload para que a pasta apareça no Revit. 
+ 
 ## Exemplo de uso
 
 Alguns exemplos interessantes e úteis sobre como seu projeto pode ser utilizado. Adicione blocos de códigos e, se necessário, screenshots.
