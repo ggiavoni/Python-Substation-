@@ -1,0 +1,11 @@
+﻿<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
+        Title="Lista de Famílias no Projeto"
+        Width="476.316" ResizeMode="NoResize" SizeToContent="Height" Height="293.157">
+    <StackPanel Margin="10,10,10,49">
+        <Label Content="Escreva o Prefixo do Projeto abaixo: &#xD;&#xA;&#xD;&#xA;Por exemplo: SOL-SDM00-EB-PE-EQP-DE-002-R00&#xD;&#xA;&#xD;&#xA;Escreva = SOL " Margin="0,0,0,10" Height="92" />
+        <TextBox x:Name="textbox" Height="46" FontSize="18" FontWeight="Heavy" VerticalContentAlignment="Center" Padding="10,0,10,0"/>
+        <Button Content="Listar Famílias" Height="44" Margin="0,10,0,0" Click="say_hello" RenderTransformOrigin="0.495,0.435" />
+    </StackPanel>
+</Window>
