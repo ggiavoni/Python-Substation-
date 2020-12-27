@@ -101,7 +101,7 @@ Agora abra o Revit, procure a extensão PyRevit e clique em Reload.
 * Função: Retorna a quantidade em metros dos elementos de malha de terra. (Categoria FlexPipe)
 * Status: Em progresso
 
-**Painel Parâmetros*
+**Painel Parâmetros**
 
 ![](https://github.com/ggiavoni/Python-Substation-/blob/main/Imagens/1.15.PNG)
 
