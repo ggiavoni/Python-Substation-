@@ -11,6 +11,8 @@ Muitas outras funcionalidades virão por ai, mas para comerçarmos, vamos extrai
 
 Instale o [PythonShell](https://github.com/architecture-building-systems/revitpythonshell). 
 
+Abra o Revit, vá em Add-Ins e clique em Interactive Python Shell. Agora copie e cole o código abaixo. 
+
 Vamos criar um script que retorna o nome de todas as famílias do projeto. 
 
 ```
@@ -38,6 +40,11 @@ for a in family_name:
     
 
 ```
+
+Resultado: 
+
+![](https://github.com/ggiavoni/Python-Substation-/blob/main/1.16.PNG)
+
 
 ## Instalação das Ferramentas Python-Substation
 
