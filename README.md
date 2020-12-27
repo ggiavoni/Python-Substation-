@@ -8,11 +8,16 @@ Objetivo: Quantitativos específicos para o Revit, onde o usuário irá apenas c
 ## Instalação das Ferramentas Python-Substation
 
 ## Passo 1.0: Instale o PyRevit
+
+![](https://github.com/ggiavoni/Python-Substation-/blob/main/1.1.PNG)
+
 Plataforma criada por Ehsan Iran-Nejad que serve como ponte entre C# e Python: 
 
 [PyRevit - Página de Instalação](https://www.notion.so/Install-pyRevit-98ca4359920a42c3af5c12a7c99a196d)
 
 ## Passo 2.0: Adicione a extensão 
+
+![](https://github.com/ggiavoni/Python-Substation-/blob/main/1.0.PNG)
 
 Procure este caminho após a instalação: 
 
