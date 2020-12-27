@@ -1,10 +1,6 @@
 # Python para Subestações de Energia com BIM 
 > Criação de Extensões em Python na plataforma PyRevit que utliza o PythonShell.
 
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
-
 Objetivo: Quantitativos específicos para o Revit, onde o usuário irá apenas clicar em um botão e extrair o quantitativo de uma categoria específica. A ideia principal é reduzir o tempo de tal função para novos usuários, ou principalmente, aqueles que apenas desejam consultar informação. 
 
 ![](../header.png)
@@ -20,17 +16,15 @@ Plataforma criada por Ehsan Iran-Nejad que serve como ponte entre C# e Python:
 
 Procure este caminho após a instalação: 
 
-C:\Users\## USER ##\AppData\Roaming\pyRevit-Master\extensions
+C:\Users\SeuUsuário\AppData\Roaming\pyRevit-Master\extensions
 
-Cole dentro de extensions [pyRevitSubstation.extension](https://github.com/ggiavoni/PythonSubstation-/tree/main/pyRevitSubstation.extension/pyRevitSub.tab)
+Cole a pasta disponível em [pyRevitSubstation.extension](https://github.com/ggiavoni/PythonSubstation-/tree/main/pyRevitSubstation.extension/pyRevitSub.tab) neste local. 
 
-Clique em PyRevit e aplique o Reload para que a pasta apareça no Revit. 
+Agora abra o Revit, procure a extensão PyRevit e clique em Reload. 
  
-## Exemplo de uso
+## Ferramentas Disponíveis 
 
-Alguns exemplos interessantes e úteis sobre como seu projeto pode ser utilizado. Adicione blocos de códigos e, se necessário, screenshots.
 
-_Para mais exemplos, consulte a [Wiki][wiki]._ 
 
 ## Configuração para Desenvolvimento
 
