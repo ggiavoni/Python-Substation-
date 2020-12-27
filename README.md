@@ -11,22 +11,20 @@ Objetivo: Quantitativos específicos para o Revit, onde o usuário irá apenas c
 
 ## Instalação das Ferramentas Python-Substation
 
-## Passo 01: Instale o PyRevit
+## Passo 1.0: Instale o PyRevit
 Plataforma criada por Ehsan Iran-Nejad que serve como ponte entre C# e Python: 
 
 [PyRevit - Página de Instalação](https://www.notion.so/Install-pyRevit-98ca4359920a42c3af5c12a7c99a196d)
 
-## Passo 02 
+## Passo 2.0: Adicione a extensão 
 
 Procure este caminho após a instalação: 
 
-C:\Users\USER\AppData\Roaming\pyRevit-Master\extensions
+C:\Users\## USER ##\AppData\Roaming\pyRevit-Master\extensions
 
-Para que uma nova aba, personalizada, apareça no Revit junto aos já existentes do PyRevit, você precisa que as pastas e subpastas estejam organizadas da seguinte forma:                                             
-* 1.0.1
-    * Baixe e cole dentro de extensions [pyRevitSubstation.extension](https://github.com/ggiavoni/PythonSubstation-/tree/main/pyRevitSubstation.extension/pyRevitSub.tab)
-* 1.0.2
-    * Clique em PyRevit e aplique o Reload para que a pasta apareça no Revit. 
+Cole dentro de extensions [pyRevitSubstation.extension](https://github.com/ggiavoni/PythonSubstation-/tree/main/pyRevitSubstation.extension/pyRevitSub.tab)
+
+Clique em PyRevit e aplique o Reload para que a pasta apareça no Revit. 
  
 ## Exemplo de uso
 
