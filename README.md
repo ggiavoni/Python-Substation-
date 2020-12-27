@@ -14,7 +14,7 @@ No momento estou desenvolvendo quantitativos específicos para o Revit, onde o u
 PyRevit:
 Plataforma criada por Ehsan Iran-Nejad que serve como ponte entre C# e Python: 
 
-https://www.notion.so/Install-pyRevit-98ca4359920a42c3af5c12a7c99a196d
+[PyRevit - Página de Instalação](https://www.notion.so/Install-pyRevit-98ca4359920a42c3af5c12a7c99a196d)
 
 
 ## Exemplo de uso
