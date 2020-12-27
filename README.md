@@ -43,7 +43,7 @@ for a in family_name:
 
 Resultado: 
 
-![](https://github.com/ggiavoni/Python-Substation-/blob/main/1.16.PNG)
+![](https://github.com/ggiavoni/Python-Substation-/blob/main/Imagens/1.16.PNG)
 
 
 ## Instalação das Ferramentas Python-Substation
